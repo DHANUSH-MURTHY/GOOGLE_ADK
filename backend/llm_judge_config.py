@@ -30,6 +30,7 @@ Agent Capabilities: {agent_capabilities}
 EVALUATION DATA:
 User Query: {user_query}
 Agent Response: {agent_response}
+Expected Response (if known): {expected_response}
 Tool Calls Made: {tool_calls}
 Expected Tools (if known): {expected_tools}
 
@@ -37,6 +38,7 @@ EVALUATION CRITERIA:
 
 1. Response Match Score (0.0 to 1.0):
    - How well does the agent's response answer the user's query?
+   - If an Expected Response is provided, how well does the Agent Response match it in terms of correctness and key information?
    - Is the information accurate and complete?
    - Is the tone and format appropriate?
    - Deduct heavily if response is off-topic or irrelevant to agent's purpose
